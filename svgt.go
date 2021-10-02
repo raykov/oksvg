@@ -35,7 +35,7 @@ type (
 
 func (svgt *SvgText) DrawTransformed(img *image.RGBA, opacity float64, t rasterx.Matrix2D) {
 	var err error
-	var col color.Color
+	var col color.Color = color.Black
 
 	textAnchor := "left"
 	x, y := -1.0, -1.0
